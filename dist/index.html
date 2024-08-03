@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toggle Website</title>
+    <link rel="stylesheet" href="../public/output.css">
+</head>
+<body>
+<!-- Navbar -->
+<nav class="nav">
+    <div class="container flex items-center justify-between h-16 md:h-20">
+        <div class="relative z-30  ">
+            <img src="https://res.cloudinary.com/dvgqyejfc/image/upload/v1722632300/Group_11_fgecpc.webp" alt="logo">
+        </div>
+        <div class="flex items-center flex-row-reverse md:flex-row gap-3 md:gap-12">
+            <!-- Menu list -->
+            <ul id="menu" class="nav-menus translate-y-[-200%]  md:translate-y-0 ">
+               <li class="border-t-[2px] border-b-[2px] px-3 border-[#333333] dark:border-primary-white "><a class="nav-link  " href="#main">MAIN</a></li>
+                <li><a class="nav-link " href="#gallery">GALLERY</a></li>
+                <li><a class="nav-link" href="#projects">PROJECTS</a></li>
+                <li><a class="nav-link " href="#certifications">CERTIFICATIONS</a></li>
+                <li><a class="nav-link " href="#contacts">CONTACTS</a></li>
+
+            </ul>
+            <!-- Mobile Menu Button -->
+            <button id="toggle-menu" class="relative z-30 p-2 md:hidden dark:invert ">
+                <img src="../images/toggle-menu.svg" class="w-5 h-12 direction-rtl" alt="TOGGLE-MENU">
+            </button>
+            <!--toggle theme  -->
+            <button id="toggle-theme" class="relative z-30 dark:invert">
+                <img 
+                class="md:opacity-70 w-7 md:-mt1"
+                src ="../images/dark.webp"
+                alt="theme"/>
+            </button>
+        </div>
+    </div>
+</nav>
+<!-- main section -->
+
+<main class="container">
+
+<!-- about section -->
+    <section id="main" class="py-32">
+        <div class="flex  flex-wrap flex-col md:flex-row items-start justify-center gap-10 md:gap-10">
+
+            <div class=" flex flex-col  overflow-hidden gap-10 md:gap-[1.875]">
+                <img
+                class="w-full h-full opacity-90"
+                src="../images/about1.webp"/>
+                <img
+                class="w-full h-full opacity-90"
+                src="../images/about3.webp"/>
+            </div>
+            <div class="flex flex-col  pt-[3.75]  gap-10 md:gap-6">
+                <img
+                class=" w-full mt-8 opacity-90 hidden lg:block"
+                src="../images/about2.webp"/>
+            </div>
+            <div class="flex flex-col text-wrap">
+                <h1 class="text-[#BDBDBD] text-7xl">About</h1>
+                <p class="w-96 text-xl leading-7 ">Lorem Ipsum is simply dummy text 
+                    of the printing and typesetting industry.
+                     Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
+                     when an unknown printer took a galley of
+                      type and scrambled it to make a type specimen book.
+                      It has survived not only five centuries, 
+                    but also the leap into electronic typesetting,
+                       remaining essentially unchanged.
+                </p>
+                <button class="w-56 p-6 mt-8 bg-white dark:bg-slate-800"><span>READ MORE</span><img class="w-10 inline-block" src="../images/rarrow.webp"/></button>
+    
+            </div>
+
+        </div>
+        
+
+    </section>
+
+</main>
+
+<script src="../js/script.js"></script>
+</body>
+</html>
